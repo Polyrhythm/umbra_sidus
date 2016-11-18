@@ -16,7 +16,7 @@ namespace Hover.Core.Cursors {
 		private CursorType _Type;
 		
 		[SerializeField]
-		private CursorCapabilityType _Capability = CursorCapabilityType.Full;
+		public CursorCapabilityType _Capability = CursorCapabilityType.Full;
 		
 		[SerializeField]
 		private bool _IsRaycast = false;

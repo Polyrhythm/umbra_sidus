@@ -3,15 +3,14 @@
 ;; scene setup
 '((x) leap motion configured)
 '((/) hover-kit-ui configured)
-'(() prototype various input mechanisms
-  ((/) switch)
-  (() button)
-  (() checklist)
+'((/) prototype various input mechanisms
+  ((x) checkbox)
+  ((x) slider)
   (() keyboard/keypad))
 '(() space skybox)
 
 ;; asset creation
-'(() cockpit
+'((/) cockpit
   (() front immediate-access section)
   (() electrical panel)
   (() diagnostics panel)

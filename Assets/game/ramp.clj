@@ -1,9 +1,11 @@
 (ns game.ramp
  (require [arcadia.core :as a]
-          [hard.core :as hard])
- (import [UnityEngine Resources]))
+          [hard.core :as hard]
+          [game.ui :as ui])
+ (import [UnityEngine Resources]
+         [Hover.InterfaceModules.Cast HovercastInterface])) 
 
 (defn setup []
- (hard/clear-cloned!)
- (let [camera (hard/clone! :cameras/lm-rig)
-       i-manager (hard/clone! :managers/interaction-manager)]))
+ (ui/handle-menu-cursors))
+
+'(setup)
